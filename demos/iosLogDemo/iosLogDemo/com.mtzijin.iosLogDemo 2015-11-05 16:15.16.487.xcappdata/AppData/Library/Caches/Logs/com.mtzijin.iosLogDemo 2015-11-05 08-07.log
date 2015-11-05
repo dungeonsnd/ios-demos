@@ -1,0 +1,16 @@
+E 2015-11-05 16:07:09 | Error msg.
+W 2015-11-05 16:07:09 | Warn msg.
+I 2015-11-05 16:07:09 | Info msg.
+D 2015-11-05 16:07:09 | Debug msg.
+E 2015-11-05 16:07:58 | Error msg.
+W 2015-11-05 16:07:58 | Warn msg.
+I 2015-11-05 16:07:58 | Info msg.
+D 2015-11-05 16:07:58 | Debug msg.
+2015-11-05 16:15:03 [E] Error msg.
+    [-[AppDelegate application:didFinishLaunchingWithOptions:] AppDelegate:35]
+2015-11-05 16:15:03 [W] Warn msg.
+    [-[AppDelegate application:didFinishLaunchingWithOptions:] AppDelegate:36]
+2015-11-05 16:15:03 [I] Info msg.
+    [-[AppDelegate application:didFinishLaunchingWithOptions:] AppDelegate:37]
+2015-11-05 16:15:03 [D] Debug msg.
+    [-[AppDelegate application:didFinishLaunchingWithOptions:] AppDelegate:38]

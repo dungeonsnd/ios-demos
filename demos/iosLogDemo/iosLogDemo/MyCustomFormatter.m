@@ -21,6 +21,7 @@
         if (threadUnsafeDateFormatter == nil) {
             threadUnsafeDateFormatter = [[NSDateFormatter alloc] init];
             [threadUnsafeDateFormatter setDateFormat:dateFormatString];
+            [threadUnsafeDateFormatter setTimeZone:[NSTimeZone  timeZoneWithName:@"Asia/Shanghai"]];
             threadUnsafeDateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
         }
         
@@ -37,6 +38,7 @@
         if (dateFormatter == nil) {
             dateFormatter = [[NSDateFormatter alloc] init];
             [dateFormatter setDateFormat:dateFormatString];
+            [dateFormatter setTimeZone:[NSTimeZone  timeZoneWithName:@"Asia/Shanghai"]];
             dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
             
             [threadDictionary setObject:dateFormatter forKey:key];
@@ -58,10 +60,11 @@
     
     NSString *dateAndTime = [self stringFromDate:(logMessage.timestamp)];
     
-    return [NSString stringWithFormat:@"%@ [%@] %@\n    [tid:%@]\n[%@ %@:%@]",
+    return [NSString stringWithFormat:@"%@ [%@] %@\n    [tid:%@ %@:%@ %@]",
             dateAndTime, logLevel, logMessage->_message,
             logMessage->_threadID,
-            logMessage->_function,logMessage->_fileName,@(logMessage->_line)
+            logMessage->_fileName,@(logMessage->_line),
+            logMessage->_function
             ];
 }
 

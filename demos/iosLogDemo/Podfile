@@ -1,4 +1,5 @@
 source 'https://gitcafe.com/akuandev/Specs.git'
 
 pod 'CocoaLumberjack'
+pod 'SSZipArchive'
 

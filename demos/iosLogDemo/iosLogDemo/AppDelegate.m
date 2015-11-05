@@ -8,8 +8,11 @@
 
 #import "AppDelegate.h"
 
-#import <CocoaLumberjack/CocoaLumberjack.h>
 #import "MyCustomFormatter.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import <SSZipArchive/SSZipArchive.h>
+
+
 
 @interface AppDelegate ()
 
@@ -37,6 +40,20 @@
     DDLogInfo(@"Info msg.");
     DDLogDebug(@"Debug msg.");
     DDLogVerbose(@"Verbose msg.");
+    
+    
+    
+    NSString * logFilePath =[[[fileLogger currentLogFileInfo] filePath] stringByDeletingLastPathComponent];
+    NSString * archivePath =[logFilePath stringByDeletingLastPathComponent];
+    NSLog(@"logFilePath:%@, archivePath:%@", logFilePath, archivePath);
+    
+    NSString *archiveFile = [archivePath stringByAppendingPathComponent:@"log.zip"];
+    
+    // Create
+    [SSZipArchive createZipFileAtPath: archiveFile withContentsOfDirectory: logFilePath];
+    
+    // Unzip
+    //    [SSZipArchive unzipFileAtPath:zipPath toDestination: unzipPath];
     
     return YES;
 }

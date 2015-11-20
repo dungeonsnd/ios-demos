@@ -8,11 +8,20 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>SSZipArchive.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -23,6 +32,16 @@
 			<true/>
 		</dict>
 		<key>336DBF20648F51A3CCA9CD21FAC160AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>44685B2BD4CA7E26518417B9913EEB56</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>89C381DCC4166E97B096F13EED0B20F0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -6,6 +6,7 @@ https://github.com/feuvan/opencore-amr-iOS
 lib-opencore-amr-ios.tar.xz is the result binaries compiled by myself.
 Use tar Jxvf lib-opencore-amr-ios.tar.xz to uncompress.
 Have fun!
+笔者将自己编译的启动bitcode的静态库用在一个demo中，并在真机上录音转换成功，这些测试的真机包含 iphone5s （ arm64）/iphone4s(armv7)/itouch5。所以猜测适配所有机型。
 
 
 opencore-amr-0.1.3的编译方法
@@ -41,6 +42,7 @@ total 25744
 -rw-r--r--  1 jeffery  staff   363K 11  4 14:28 libopencore-amrwb.a.x86_64
 -rwxr-xr-x  1 jeffery  staff   968B 11  4 14:28 libopencore-amrwb.la
 drwxr-xr-x  4 jeffery  staff   136B 11  4 14:28 pkgconfig
+
 
 3 参考资料
 http://blog.csdn.net/justinjing0612/article/details/9633121

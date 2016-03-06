@@ -52,8 +52,11 @@ ios-study-code
 
 3) 自定义View情况
 结论，
+
+```
 等同关系的情况：xib有outlet及action对应的View时，只能设置xib视图选中时的Identity inspector->Custom class->Class为自己编写的View子类的类名，File's Owner中Class不设置。
 引用关系的情况：i) xib的outlet及action对应ViewController时，即创建VC时同时勾选创建xib，设置File's Owner中的Class，视图中的Class保持默认的UIView。 ii) 自定义View中加载xib，并连接outlet及action时，设置方式同VC的情况。
+```
 
 代码见 https://github.com/dungeonsnd/ios-demos/tree/master/demos/SelfDefineXibView
 

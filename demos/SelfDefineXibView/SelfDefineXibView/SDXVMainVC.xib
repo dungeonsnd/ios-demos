@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SDXVMainVC">
+            <connections>
+                <outlet property="tblAccount" destination="d3L-uC-TUg" id="ArI-Wv-xlU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d3L-uC-TUg">
+                    <rect key="frame" x="8" y="96" width="584" height="495"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.80770532848810195" green="0.91275154966691741" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="d3L-uC-TUg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="96" id="1rj-MI-CBV"/>
+                <constraint firstItem="d3L-uC-TUg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FcU-55-FJg"/>
+                <constraint firstAttribute="bottom" secondItem="d3L-uC-TUg" secondAttribute="bottom" constant="9" id="TDR-Du-ZGs"/>
+                <constraint firstItem="d3L-uC-TUg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="ZS7-7j-vkw"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

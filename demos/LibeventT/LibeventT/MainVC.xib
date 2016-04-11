@@ -47,7 +47,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a5i-uM-EVW">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a5i-uM-EVW">
                     <rect key="frame" x="10" y="20" width="580" height="452"/>
                     <color key="backgroundColor" red="0.96468695462478182" green="0.96468695462478182" blue="0.96468695462478182" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="textColor" red="0.02856402197514692" green="0.20728432794901322" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>

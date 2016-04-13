@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VC1">
+            <connections>
+                <outlet property="overlayView" destination="ffS-rU-pQK" id="j5F-Yb-OsD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拍照页面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPG-Pi-9bT">
+                    <rect key="frame" x="248" y="44" width="104" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="em9-ra-Ha2">
+                    <rect key="frame" x="274" y="278" width="52" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <state key="normal" title="拍照"/>
+                    <connections>
+                        <action selector="onTakePic:" destination="-1" eventType="touchUpInside" id="WWj-jV-zVB"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffS-rU-pQK">
+                    <rect key="frame" x="174" y="407" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.55249833839999996" green="1" blue="0.92399968399999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ffS-rU-pQK" secondAttribute="bottom" constant="65" id="8hc-lA-Q9q"/>
+                <constraint firstAttribute="trailing" secondItem="ffS-rU-pQK" secondAttribute="trailing" constant="186" id="FwX-ek-2ot"/>
+                <constraint firstItem="VPG-Pi-9bT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="ZR9-wu-7pl"/>
+                <constraint firstItem="ffS-rU-pQK" firstAttribute="top" secondItem="em9-ra-Ha2" secondAttribute="bottom" constant="85" id="ef8-64-K3Z"/>
+                <constraint firstItem="ffS-rU-pQK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="174" id="fMG-6p-ONy"/>
+                <constraint firstItem="em9-ra-Ha2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ggu-HC-rv1"/>
+                <constraint firstItem="VPG-Pi-9bT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qyc-eL-bOf"/>
+                <constraint firstItem="em9-ra-Ha2" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="wZ6-z6-UfC"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

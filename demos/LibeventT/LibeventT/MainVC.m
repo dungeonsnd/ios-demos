@@ -30,7 +30,7 @@
                                                  name:@"usfnt"
                                                object:nil];
     
-    self.textFieldHost.text =@"server2.en.trademessenger.com";
+    self.textFieldHost.text =@"server2.en.messenger.com";
     self.textFieldTimerSec.text =@"15";
 }
 
